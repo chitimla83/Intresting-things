@@ -1,0 +1,18 @@
+nav    { grid-area: n; }
+header { grid-area: h; }
+main   { grid-area: m; }
+footer { grid-area: f; }
+h2 {grid-area: h2; } 
+center {grid-area: c; }
+
+body {
+
+  display: grid;
+  grid: " n   n  n  " 6em
+        " h   h  h  " auto
+        "h2   h2  h2 " auto
+        "c    c   c" auto
+        "m    m   m " auto
+        " f   f   f  " auto
+        / 1fr 4fr 1fr;
+}
